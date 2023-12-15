@@ -1,0 +1,191 @@
+/* Reset some default styles */
+body, h1, h2, p, ul {
+  margin: 20;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  background-color: #0339cc; /* Light gray background */
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: #135dff; /* White container background */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for container */
+}
+
+.header {
+  display: flex;
+  color: #ece8eb;
+  font-style:italic;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd; /* Gray border at the bottom of the header */
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.profile h2 {
+  font-size: 36px;
+}
+
+.profile button {
+  font-size: 14px;
+  color: #135dff;
+  margin-top: 15px;
+  margin-left: 150px;
+  scroll-behavior: smooth;
+
+}
+
+h1 {
+  color: #007acc; /* Blue color for headings */
+}
+
+h2 {
+  
+  color: #ff9900; /* Orange color for headings */
+  font-size: 34px; /* Larger font size for profile */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+button {
+  background-color: #ff9900; /* Orange background for buttons */
+  color: #fff; /* White text color for buttons */
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #cc00ff; /* Darker orange on hover */
+  animation: reverse;
+}
+
+.settings {
+  margin-top: 20px;
+  text-align: right;
+}
+
+/* CSS for side-by-side event cards */
+.event-container {
+  color: #ff9900;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.event-card {
+  flex: 0 1 calc(50% - 10px); /* Two events side by side with a small gap */
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 20px;
+  display: flex; /* Add flex display to center-align child elements */
+  flex-direction: column; /* Stack child elements vertically */
+  align-items: center; /* Center-align child elements horizontally */
+}
+
+.event-details {
+  text-align: center;
+}
+
+/* Footer styles (no need to change this part) */
+.footer {
+  background-color: orange;
+  text-align: center;
+  padding: 10px 0;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999; /* Ensure it's above other content */
+}
+
+.footer-text {
+  font-size: 14px;
+}
+
+/* Header styles */
+.header-text {
+  font-size: 100px; /* Adjust the font size as needed */
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: rgb(255, 255, 255);
+  margin: -4%;
+  font-style:inherit;
+  text-align: center;
+  position:relative;
+  bottom: 10px; /* Adjust the vertical position from the bottom */
+  left: 10px; /* Adjust the horizontal position from the left */
+}
+
+.settings {
+  margin-top: 20px;
+}
+
+.settings h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.setting-option {
+  margin-bottom: 15px;
+}
+
+.setting-option label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.setting-option select {
+  width: 20%;
+  padding: 3px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+.setting-option button {
+  padding: 10px 10px;
+  background-color: #007bff; /* You can change this color */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+}
+
+.setting-option button:hover {
+  background-color: #0056b3; /* Change the hover color as needed */
+}
+
+/* Add this CSS to your App.css file */
+.event-image {
+  width: 100%; /* Set the image width to 100% of its container */
+  height: auto; /* Maintain the aspect ratio */
+}
+
+.event-details {
+  font-size: 16px; /* Adjust the size as needed */
+  color: aliceblue;
+}
+
+.event-details h3 {
+  font-size: 20px; /* Size for event name */
+}
+
+.event-details p {
+  font-size: 14px; /* Size for event category and date */
+}
+
